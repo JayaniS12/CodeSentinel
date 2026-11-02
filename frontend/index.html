@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeSentinel | AI Code Review</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Code<span>Sentinel</span></div>
+        <div class="status">● SYSTEM ONLINE</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <p class="eyebrow">INTELLIGENT CODE ANALYSIS</p>
+
+            <h1>Write better code.<br>
+                <span>Catch problems early.</span>
+            </h1>
+
+            <p class="subtitle">
+                Analyze your Python code, identify potential issues,
+                and discover ways to improve it.
+            </p>
+        </section>
+
+        <section class="workspace">
+
+            <div class="editor-panel">
+
+                <div class="panel-header">
+                    <span>YOUR CODE</span>
+                    <span>PYTHON</span>
+                </div>
+
+                <textarea
+                    id="codeInput"
+                    placeholder="Paste your Python code here..."
+                    spellcheck="false"
+                ></textarea>
+
+                <div class="button-group">
+                    <button id="analyzeBtn" onclick="analyzeCode()">
+                        Analyze Code →
+                    </button>
+
+                    <button id="aiReviewBtn" class="ai-button" onclick="aiReview()">
+                        ✨ AI Review
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="results-panel">
+
+                <div class="panel-header">
+                    <span>REVIEW REPORT</span>
+                    <span id="reviewStatus">AWAITING INPUT</span>
+                </div>
+
+                <div id="results">
+                    <div class="empty-state">
+                        <div class="empty-icon">⌘</div>
+                        <h3>Ready to review</h3>
+                        <p>Your analysis results will appear here.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            CodeSentinel © 2026 · Built for safer, cleaner code.
+        </footer>
+
+    </main>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
+
