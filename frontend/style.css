@@ -382,3 +382,63 @@ footer {
     padding: 2px 5px;
     border-radius: 4px;
 }
+
+/* Syntax error report */
+
+.syntax-error {
+    position: relative;
+    overflow: hidden;
+    border-color: #713b4a;
+    background: linear-gradient(145deg, #1b1b2b, #111827);
+    padding: 22px;
+}
+
+.syntax-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(239, 68, 68, 0.14);
+    color: #f87171;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 22px 0 14px;
+}
+
+.syntax-error h3 {
+    color: #f1f5f9;
+    margin-bottom: 10px;
+}
+
+.syntax-error .error-message {
+    color: #fca5a5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.syntax-error .suggestion {
+    background: #111827;
+    border: 1px solid #34415c;
+    border-radius: 9px;
+    padding: 15px;
+    line-height: 1.7;
+}
+
+.syntax-error .suggestion p {
+    margin-top: 7px;
+    color: #cbd5e1;
+}
+
+.error-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid #34415c;
+    color: #8493aa;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+}
